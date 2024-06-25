@@ -1,0 +1,239 @@
+.blog{
+  padding: 3rem 15px;
+}
+
+.blog-div{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-div .blogflex{
+  display: flex;
+}
+
+.blogflex .bloggrid{
+  width: 66.6667%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blogflex .blogside{
+  width: 33.333%;
+}
+
+.bloggrid .gridbox{
+  width: 45%;
+  overflow: hidden;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.bloggrid .gridbox img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bloggrid .box1{
+  position: relative;
+}
+
+.box1 .blogdate{
+  width: 60px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: #7ab730;
+  align-items: center;
+  color: #fff;
+  top: 10px;
+  left: -100px;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.bloggrid .gridbox:hover .blogdate{
+  left: 0;
+  opacity: 1;
+}
+
+.bloggrid .box2{
+    padding: 1.5rem;
+}
+
+.bloggrid .box2 h5{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    transition: .5s;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.bloggrid .gridbox:hover h5{
+    color: #7ab730;
+}
+
+.bloggrid .box2 p{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.bloggrid .gridbox:hover{
+  box-shadow: 0 0 30px 0 #cccccc;
+}
+
+.blogside .authorcard{
+  background-color: #fff;
+  padding: 3rem 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.authorcard img{
+  margin: 0 auto 1rem;
+}
+
+.authorcard .socicon{
+  display: flex;
+  justify-content: center;
+  color: #7ab730;
+}
+
+.socicon a{
+  text-decoration: none;
+  color: #7ab730;
+  font-size: 18px;
+  padding: 0 5px;
+  margin: 1rem 0 0;
+}
+
+.blogside .searchbox{
+  padding: 30px;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  background-color: #fff;
+}
+
+.searchbox input{
+  width: 85%;
+  padding: 10px 20px;
+  border: 1px solid #ced4da;
+}
+
+.searchbox input:focus{
+  outline: 0;
+  border: 1px solid #b8e087;
+  box-shadow: 0 0 0 0.2rem #7ab73040;
+}
+
+.searchbox .searchicon{
+  cursor: pointer;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  background-color: #7ab730;
+  color: #fff;
+  font-size: 18px;
+}
+
+.blogside .post{
+  margin-bottom: 3rem;
+}
+
+.blogside .post h3{
+  margin-bottom: 1.5rem;
+  color: #000;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.post .postbox{
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.postbox h6{
+  font-size: 16px;
+  color: #000!important;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 0;
+  transition: .5s ease;
+  letter-spacing: normal;
+}
+
+.postbox small{
+  color: #7ab730;
+  font-size: 14px;
+}
+
+.postbox:hover h6{
+  color: #7ab730!important;
+}
+
+.blogform{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blogform h1{
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blogform button{
+  padding: 10px 20px;
+}
+
+.blogform form input{
+  margin-bottom: 2rem;
+}
+
+.blogform h5{
+  color: #656565;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+
+
+
+@media (max-width: 928px){
+  .blog-div .blogflex .bloggrid .gridbox{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px){
+  .blog-div .blogflex{
+    flex-direction: column;
+  }
+  .blog-div .blogflex .bloggrid, .blog-div .blogflex .blogside{
+    width: 100%;
+  }
+  .blog-div .blogflex .bloggrid .gridbox{
+    width: 100%;
+  }
+}
+

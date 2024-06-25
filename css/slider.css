@@ -1,0 +1,42 @@
+#slider {
+	overflow: hidden;
+	margin-left: 0;
+	height: 500px;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+
+#slider figure {
+	width:300%;
+	position: relative;
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	animation: 9s slider infinite;
+}
+
+#slider figure:hover {
+	animation-play-state: paused; enable for pause on hover}
+#slider figure img {
+	position: relative;
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+
+/*#slider div 
+{
+	color: black;
+	margin-top: 300px;
+	margin-left: 500px;
+	font-size: 56px;
+	font-family: 'Dancing Script', cursive;
+}*/

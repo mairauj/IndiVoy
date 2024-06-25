@@ -1,0 +1,125 @@
+.testimonial {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url('image/testimonialbg.jpg');
+    padding: 5rem 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 90px;
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: zoomIn;
+}
+
+.testimonial-div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-carousel {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.testimonial-carousel .testimonial-item {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 2px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--primary);
+    background: #FFFFFF;
+}
+
+@keyframes zoomIn{
+    0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+}
+50% {
+    opacity: 1;
+}
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.testimonial-carousel .owl-nav .owl-next, .testimonial-carousel .owl-nav .owl-prev {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #7ab730;
+    border-radius: 2px;
+    font-size: 18px;
+    transition: .5s;
+    margin: 0 10px;
+}
+
+.testimonial-carousel .owl-nav .owl-next:hover, .testimonial-carousel .owl-nav .owl-prev:hover{
+    color: #7ab730;
+    background-color: #fff;
+}
+
+.testimonial-item .client{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.testimonial-item .client .client-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonial-item img{
+    margin-right: 10px;
+}
+
+.testimonial-item h6{
+    letter-spacing: normal;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.testimonial-item .quote{
+    bottom: 0;
+    position: absolute;
+    color: #7ab730;
+    right: 0;
+    margin-right: 1.5rem;
+}

@@ -1,0 +1,125 @@
+.abthead{
+	margin-top: 100px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/carousel-2.jpg'), no-repeat;
+	background-position: center top;
+}
+
+.abthead-div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.abthead-div>.row-fluid{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+.abthead-div h3{
+	font-size: 48px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.abthead-div .abtpath{
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+}
+
+.abtpath a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.abtpath img{
+	height: 22px;
+	margin: 0 15px;
+}
+
+.guide, .package{
+  padding: 3rem 15px;
+}
+
+.guide-div, .package-div{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guide-div .guidegrid, .package-div .packagegrid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.guidegrid .gridbox{
+	width: 25%;
+  overflow: visible!important;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.guidegrid .box1{
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.guidegrid img{
+	height: auto;
+	max-width: 100%;
+}
+
+.guidegrid .gridbox:hover, .packagegrid .gridbox:hover{
+  box-shadow: 0 0 30px 0 #cccccc;
+}
+
+.guidegrid .team-social{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	transition: .5s;
+	opacity: 0;
+}
+
+.guidegrid .gridbox:hover .team-social{
+	top: 0;
+	opacity: 1;
+}
+
+.team-social i{
+	height: 36px;
+	width: 36px;
+	margin: 30px 3px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #7ab730;
+	color: #7ab730;
+	transition: .5s;
+}
+
+.team-social i:hover{
+	background-color: #7ab730;
+	color: #fff;
+}
+
+.box2{
+	padding: 1.5rem 0;
+	text-align: center;
+}
+
+.box2 p{
+	color: #656565;
+	font-size: 18px;
+}

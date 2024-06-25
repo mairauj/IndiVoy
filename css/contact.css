@@ -1,0 +1,75 @@
+.contactpg{
+		  padding: 100px 15px 50px;
+		  width: 100%;
+		  margin: 0;
+		}
+
+		.contactpg .contactpg-div{
+		  max-width: 1200px;
+		  margin: 0 auto;
+		}
+
+.contactpg .contactpg-div .contactflex{
+	margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactflex h4{
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	font-size: 32px;
+}
+
+.contactflex .contactlist .contactbox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.contactflex .contactbox .cnticon{
+	background-color: #7ab730;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+}
+
+.contactflex .contactbox i{
+	color: #fff;
+	background-color: #7ab730;
+	font-size: 18px;
+}
+
+.contactflex .contactbox .cnt{
+	margin-left: 15px;
+}
+
+.contactflex .contactbox .cnt h5{
+	color: #7ab730;
+	font-weight: 600;
+}
+
+.contactflex .contactbox .cnt p{
+	margin: 0;
+}
+
+.contactflex .contactform h1{
+	padding: 0;
+}
+
+.contactpg .map {
+     padding-bottom: 50%;
+     position: relative;
+     max-height: 500px;
+}
+
+.contactpg .map iframe {
+     left: 0;
+     top: 0;
+     position: absolute;
+}
